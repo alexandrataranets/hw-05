@@ -8,6 +8,8 @@
   --color-border-light: #E7E9FC;
   --color-backgraund-blue: #31D0AA;
   --color-line:#8E8F99;
+  --color-background-light: #FCFCFC;
+
 
 }
 
@@ -393,6 +395,8 @@ padding: 32px 16px;
 border-top: none;
 }
 
+/* Footer */
+
 .footer {
 background: var(--color-brand);
 padding: 100px 0;
@@ -476,4 +480,44 @@ background-color: var(--color-backgraund-blue);
   
 .footer-social-icon {
 fill: var(--color-secondary-light); 
+}
+/* End footer */
+
+/* Modal */
+.backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(46, 47, 66, 0.40);
+transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+position: relative;
+width: 408px;
+background-color: var(--color-background-light);
+border-radius: 4px;
+padding: 24px;
+transform: scale(1);
+transition: 250ms ease-in-out;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
