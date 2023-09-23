@@ -384,18 +384,29 @@
     <div class="backdrop " data-modal>
         <div class="modal">
             <button class="modal-close" type="button" data-modal-close>X</button>
-        <h2>Leave your contacts and we will call you back</h2>
-        <form name="contact-form"> 
-            <label for="user-name">Name</label>
-            <input id="user-name" type="text" name="user-name">
+            <h2>Leave your contacts and we will call you back</h2>
+            <form name="contact-form">
+                <div>
+                    <label for="user-name">Name</label>
+                    <input id="user-name" type="text" name="user-name">
+                </div> 
 
-             <label for="user-phone">Phone</label>
-            <input id="user-phone" type="tel" name="user">
-            <!--<label for="user-email">Email</label>
-            <input id="user-email" type="email" name="user">
-            <label for="user-comment">Comment</label>  -->
-            <input id="user-comment" type="text" name="user" placeholder="Text input">    
-        </form>
+                <div>
+                    <label for="user-phone">Phone</label>
+                    <input id="user-phone" type="tel" name="user">
+                </div>
+
+                <div>
+                    <label for="user-email">Email</label>
+                    <input id="user-email" type="email" name="user">
+                </div>
+                
+                <div>
+                    <label for="user-comment">Comment</label>
+                    <textarea name="user-comment" id="user-comment" placeholder="Text input"></textarea>   
+                </div>
+                    
+            </form>
         </div>
 
     </div>
