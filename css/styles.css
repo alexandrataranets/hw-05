@@ -675,7 +675,9 @@ border-color: var(--color-secondary);
 .modal-input:focus + .modal-input-icon{
 fill: var(--color-secondary);
 }
-
+.comment {
+  margin-bottom: 16px;
+}
 .modal-textarea {
 width: 100%;
 min-height: 120px;
@@ -718,7 +720,7 @@ color: var(--color-secondary);
   margin-bottom: 24px;
 }
 
- .modal-checkbox-check { 
+.modal-checkbox-check { 
 display: inline-flex;
 align-items: center;
 justify-content: center;
