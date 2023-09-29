@@ -381,9 +381,14 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop " data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button class="modal-close" type="button" data-modal-close>X</button>
+            <button class="modal-close visually-hidden" type="button" data-modal-close>X</button>
+            <div class="modal-close-button">
+                <svg class="modal-button-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"> </use>
+                </svg>
+            </div>
             <h2 class="modal-h">Leave your contacts and we will call you back</h2>
 
             <form name="contact-form" class="form">

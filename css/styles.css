@@ -524,6 +524,19 @@ position: absolute;
 top: 24px;
 right: 24px;
 }
+.modal-close-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-border-light);
+  border-radius: 50%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  margin-left: 336px; 
+}
+
 .modal-h {
 color: var(--color-brand);
 font-size: 16px;
