@@ -739,8 +739,11 @@ font-weight: 400;
 line-height: 1.17;
 letter-spacing: 0.04em;
 }
-.modal-checkbox-icon:checked {
+.modal-checkbox-input:checked {
 background-color: var(--color-background);
 border: none;
 fill: var(--color-secondary-light);
+}
+.privacy-policy {
+  color: var(--color-secondary);
 }
